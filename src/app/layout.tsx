@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     locale: "en_NG",
     siteName: "First Laurel Hotel & Suites",
   },
+  icons: {
+    icon: "/first-laurel.png",
+    apple: "/first-laurel.png",
+  },
 };
 
 export default function RootLayout({
