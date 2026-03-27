@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-jost: 'Jost', system-ui, sans-serif;
+  --font-cormorant-garamond: 'Cormorant Garamond', Georgia, serif;
+  --navy: #0c1870;
+  --navy-dark: #080f4a;
+  --gold: #c9a84c;
+  --champagne: #f7e7ce;
+  --cream: #faf8f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-jost);
+  background-color: var(--cream);
+  color: #1a1a2e;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 3px; }
+
+/* Utility classes */
+.font-serif { font-family: var(--font-playfair); }
+.font-display { font-family: var(--font-cormorant-garamond); }
+.font-body { font-family: var(--font-jost); }
+
+.gold-gradient {
+  background: linear-gradient(135deg, #c9a84c, #f7e7ce, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-gold-500 text-white px-8 py-3.5 font-body font-medium tracking-widest text-sm uppercase transition-all duration-300 hover:bg-gold-600 hover:shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5;
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 border border-gold-500 text-gold-500 px-8 py-3.5 font-body font-medium tracking-widest text-sm uppercase transition-all duration-300 hover:bg-gold-500 hover:text-white hover:-translate-y-0.5;
+}
+
+.card-hover {
+  @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+}
+
+/* Parallax hero */
+.hero-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gold divider */
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+  margin: 0 auto;
+}
+
+/* Overlay */
+.dark-overlay {
+  background: linear-gradient(to bottom, rgba(8,15,74,0.5) 0%, rgba(8,15,74,0.7) 100%);
+}
+
+/* Mobile nav */
+.mobile-menu-open {
+  @apply fixed inset-0 z-50 bg-navy-950 flex flex-col items-center justify-center;
+}
+
+/* Image placeholder */
+.img-placeholder {
+  background: linear-gradient(135deg, #0c1870 0%, #1e4bff 50%, #0c1870 100%);
+  background-size: 200% 200%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full bg-white border border-gray-200 px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:border-gold-500 transition-colors duration-200;
+}
+
+.form-label {
+  @apply block text-xs font-body font-medium tracking-widest uppercase text-gray-500 mb-2;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  background: linear-gradient(135deg, #080f4a 0%, #0c1870 100%);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+/* Nav link active */
+.nav-link {
+  @apply relative text-sm tracking-widest uppercase font-body font-medium transition-colors duration-200;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #c9a84c;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after { width: 100%; }
+
+/* Amenity card */
+.amenity-card {
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: white;
+  transition: all 0.4s ease;
+}
+
+.amenity-card:hover {
+  border-color: rgba(201, 168, 76, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(12, 24, 112, 0.1);
+}
+
+.amenity-card:hover .amenity-icon {
+  background: #c9a84c;
+  color: white;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  columns: 3 300px;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    columns: 2 150px;
+  }
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
