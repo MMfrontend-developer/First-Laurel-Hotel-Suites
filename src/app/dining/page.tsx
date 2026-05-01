@@ -58,7 +58,7 @@ export default function DiningPage() {
             <div className="relative">
               <Image
                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
-                alt="First Laurel Restaurant"
+                alt="Royal Haven Restaurant"
                 width={700}
                 height={500}
                 className="object-cover w-full h-[480px]"

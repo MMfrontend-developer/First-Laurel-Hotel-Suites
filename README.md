@@ -1,6 +1,6 @@
-# First Laurel Hotel & Suites — Website
+# Royal Haven Hotel & Suites — Website
 
-A premium, mobile-first Next.js 15 website for First Laurel Hotel & Suites, Ibadan's #1 specialty boutique hotel.
+A premium, mobile-first Next.js 15 website for Royal Haven Hotel & Suites, Ibadan's #1 specialty boutique hotel.
 
 ## Tech Stack
 

@@ -93,7 +93,7 @@ export default function AmenitiesPage() {
       <section className="py-16 px-4 text-center max-w-2xl mx-auto">
         <p className="font-body text-gray-600 leading-relaxed">
           From world-class dining and spa treatments to seamless business
-          facilities — First Laurel Hotel & Suites provides everything you
+          facilities — Royal Haven Hotel & Suites provides everything you
           need for an extraordinary stay.
         </p>
         <div className="gold-divider mt-8" />

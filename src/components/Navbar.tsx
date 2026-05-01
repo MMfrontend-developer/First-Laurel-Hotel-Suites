@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-none group">
             <span className="font-serif text-gold-500 text-xl font-semibold tracking-wide group-hover:text-gold-400 transition-colors">
-              First Laurel
+              Royal Haven
             </span>
             <span className={`font-body ${subTextColor} text-[10px] tracking-[0.25em] uppercase`}>
               Hotel & Suites
@@ -99,7 +99,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-[60] bg-navy-950 flex flex-col">
           <div className="flex justify-between items-center p-6">
             <span className="font-serif text-gold-500 text-xl">
-              First Laurel
+              Royal Haven
             </span>
             <button
               onClick={() => setMobileOpen(false)}

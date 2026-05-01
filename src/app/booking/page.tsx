@@ -57,7 +57,7 @@ export default function BookingPage() {
             Booking Confirmed!
           </h2>
           <p className="font-body text-gray-500 mb-2">
-            Thank you for choosing First Laurel Hotel & Suites.
+            Thank you for choosing Royal Haven Hotel & Suites.
           </p>
           <p className="font-body text-gray-400 text-sm mb-6">
             Your booking reference is:

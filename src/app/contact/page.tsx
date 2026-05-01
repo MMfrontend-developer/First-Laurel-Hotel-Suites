@@ -174,7 +174,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="First Laurel Hotel Location"
+                title="Royal Haven Hotel Location"
               />
             </div>
           </ScrollReveal>

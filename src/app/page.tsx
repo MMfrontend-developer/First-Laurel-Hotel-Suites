@@ -84,7 +84,7 @@ export default function Home() {
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1800&q=85"
-          alt="First Laurel Hotel & Suites exterior"
+          alt="Royal Haven Hotel & Suites exterior"
           fill
           className="object-cover object-center"
           priority
@@ -98,7 +98,7 @@ export default function Home() {
             ★ Ibadan&apos;s #1 Specialty Lodging · TripAdvisor ★
           </p>
           <h1 className="font-serif text-white text-5xl sm:text-6xl lg:text-7xl font-normal leading-tight mb-6 animate-fade-up">
-            First Laurel
+            Royal Haven
             <em className="block text-gold-400 font-normal italic">
               Hotel & Suites
             </em>
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="relative">
               <Image
                 src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80"
-                alt="First Laurel Hotel lobby"
+                alt="Royal Haven Hotel lobby"
                 width={600}
                 height={700}
                 className="object-cover w-full h-[550px]"
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="gold-divider mb-8" style={{ marginLeft: 0 }} />
             <p className="font-body text-gray-600 leading-relaxed mb-4">
               Nestled conveniently at Km 2 along the Lagos-Ibadan Expressway,
-              First Laurel Hotel & Suites is Ibadan&apos;s distinguished boutique
+              Royal Haven Hotel & Suites is Ibadan&apos;s distinguished boutique
               hotel offering 20 meticulously appointed air-conditioned rooms.
             </p>
             <p className="font-body text-gray-600 leading-relaxed mb-8">

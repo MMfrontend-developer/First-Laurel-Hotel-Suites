@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div>
-          <p className="font-serif text-gold-500 text-2xl mb-1">First Laurel</p>
+          <p className="font-serif text-gold-500 text-2xl mb-1">Royal Haven</p>
           <p className="text-white/40 text-xs tracking-[0.2em] uppercase mb-4">
             Hotel & Suites
           </p>
@@ -103,10 +103,10 @@ export default function Footer() {
             <li className="flex gap-3 items-center">
               <Mail size={16} className="text-gold-500 shrink-0" />
               <a
-                href="mailto:info@firstlaurelhotel.com"
+                href="mailto:info@royalhavenhotel.com"
                 className="text-white/60 hover:text-gold-400 text-sm font-body transition-colors"
               >
-                info@firstlaurelhotel.com
+                info@royalhavenhotel.com
               </a>
             </li>
           </ul>
@@ -132,7 +132,7 @@ export default function Footer() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="First Laurel Hotel Location"
+              title="Royal Haven Hotel Location"
             />
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-6 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-white/30 text-xs font-body">
-            © {new Date().getFullYear()} First Laurel Hotel & Suites. All rights reserved.
+            © {new Date().getFullYear()} Royal Haven Hotel & Suites. All rights reserved.
           </p>
           <p className="text-white/30 text-xs font-body">
             Ibadan&apos;s #1 Specialty Lodging · TripAdvisor
